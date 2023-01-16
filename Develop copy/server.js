@@ -32,7 +32,7 @@ res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
 app.get('/', (req, res) =>
-res.sendFile(path.join(__dirname, '/public/index.html'))
+res.sendFile(path.join(__dirname, 'public/index.html'))
 );
 
 //this activitates the port to open tunnel to communicate with my server

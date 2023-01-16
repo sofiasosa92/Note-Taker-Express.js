@@ -9,7 +9,7 @@ notes.get('/', (req, res) => {
 });
 
 notes.post('/', (req, res) => {
-    console.log(req.body);
+    // console.log(req.body);
 
     //from line 72 index.js 
     const { title, text } = req.body;
@@ -25,7 +25,7 @@ notes.post('/', (req, res) => {
     } else {
         res.json('Error adding note');
     }
-});
+})
 
 //To delete the notes function 
 //  check this later  ??? 
