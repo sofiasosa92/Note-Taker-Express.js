@@ -4,11 +4,12 @@ const express = require('express');
 //imports the path module
 const path = require('path');
 
+
 //imports the route handlers for the API.
 const api = require('./routes/index.js');
 
 //identify my server
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 //creates express application
 const app = express();
@@ -27,11 +28,11 @@ app.use('/api', api);
 
 //HTML routes
 app.get('/notes', (req, res) =>
-res.sendFile(path.join(__dirname, '/public/notes.html'))
+res.sendFile(path.join(__dirname, '/public/assets/notes.html'))
 );
 
 app.get('/', (req, res) =>
-res.sendFile(path.join(__dirname, '/public/index.html'))
+res.sendFile(path.join(__dirname, '/public/assets/index.html'))
 );
 
 //this activitates the port to open tunnel to communicate with my server

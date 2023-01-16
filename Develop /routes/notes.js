@@ -3,9 +3,10 @@ const notes = require('express').Router();
 const { readFromFile, readAndAppend, writeToFile } = require('../helpers/fsUtils');
 
 const { v4: uuidv4 } = require('uuid');
+const { response } = require('.');
 
 //retrieving all notes
-notes.get('/',(req, res) => {
+notes.get('/', (req, res) => {
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
 });
 
@@ -13,7 +14,7 @@ notes.post('/', (req, res) => {
     console.log(req.body);
 
     //from line 72 index.js 
-    const { title, text  } = req.body;
+    const { title, text } = req.body;
 
     if (req.body) {
         const newNote = {
@@ -31,14 +32,14 @@ notes.post('/', (req, res) => {
 //To delete the notes function 
 //  check this later  ??? 
 notes.delete('/:id', (req, res) => {
-    const { id }= req.params;
-    readFromFile('./db/db.json').then((data) => {
-        const notes = JSON.parse(data);
-        const newNote = notes.filter((notes) => notes.id !== id);
-        writeToFile('./db/db.json', JSON.stringify(newNote));
-        res.json(`Note with id: ${id} deleted successfully`);
+    const id = req.params.id;
+    fs.readFile('./db/db.json', 'utf8', (err, data) => {
+        const dataBase = JSON.parse(data);
+        const filteredData = dataBase.filter(note => note.id !== id);
+        fs.writeFile('./db/db.json', JSON.stringify(filteredData), (err) => {
+            res.json('Note was deleted successfully!')
+        })
     })
-    .catch((err) => res.status(404).json(`Error: ${err}`));
 });
 
 module.exports = notes; 
