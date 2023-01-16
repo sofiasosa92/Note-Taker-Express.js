@@ -19,7 +19,7 @@ app.use(express.json());
 //allows express to parse url data from requests
 app.use(express.urlencoded({ extended: true }));
 
-app.use(express.static('public'));
+app.use(express.static('./develop/public'));
 
 //uses apivariables as middleware to handle requests
 app.use('/api', api);
