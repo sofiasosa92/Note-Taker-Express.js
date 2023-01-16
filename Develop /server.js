@@ -20,19 +20,19 @@ app.use(express.json());
 //allows express to parse url data from requests
 app.use(express.urlencoded({ extended: true }));
 
-app.use(express.static('./develop/public'));
+app.use(express.static('public'));
 
-//uses apivariables as middleware to handle requests
+//uses api variables as middleware to handle requests
 app.use('/api', api);
 
 
 //HTML routes
 app.get('/notes', (req, res) =>
-res.sendFile(path.join(__dirname, '/public/assets/notes.html'))
+res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
 app.get('/', (req, res) =>
-res.sendFile(path.join(__dirname, '/public/assets/index.html'))
+res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
 //this activitates the port to open tunnel to communicate with my server
