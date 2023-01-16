@@ -8,7 +8,7 @@ const path = require('path');
 const api = require('./routes/index.js');
 
 //identify my server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 //creates express application
 const app = express();
@@ -30,7 +30,7 @@ app.get('/notes', (req, res) =>
 res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
-app.get('*', (req, res) =>
+app.get('/', (req, res) =>
 res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
