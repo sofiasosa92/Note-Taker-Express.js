@@ -44,7 +44,7 @@ For this week's challenge I created
 [![Heroku](https://img.shields.io/badge/-Heroku-430098?logo=heroku&logoColor=white&style=for-the-badge)](https://heroku.com/)
 
 ### Heroku link:
-* [Heroku](https://mom-notes-to-go.herokuapp.com/notes)
+* [Note Taker](https://mom-notes-to-go.herokuapp.com/notes)
 
 ### Questions?:
 If you have any questions contact me on [GitHub](https://github.com/undefined) or contact 
