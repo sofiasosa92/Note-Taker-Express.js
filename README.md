@@ -41,8 +41,10 @@ For this week's challenge I created
 
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/TR/CSS/#css)
 
+[![Heroku](https://img.shields.io/badge/-Heroku-430098?logo=heroku&logoColor=white&style=for-the-badge)](https://heroku.com/)
+
 ### Heroku link:
-[Heroku](https://mom-notes-to-go.herokuapp.com/notes)
+Heroku(https://mom-notes-to-go.herokuapp.com/notes)
 
 ### Questions?:
 If you have any questions contact me on [GitHub](https://github.com/undefined) or contact 
