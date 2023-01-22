@@ -19,7 +19,15 @@ For this week's challenge I created
 
 ### Screenshot:
 
+![Screen Shot 2023-01-16 at 12 31 18 AM](https://user-images.githubusercontent.com/115671262/213898772-b9ba6c1f-ebae-4cd6-805b-f8fba2c7ae76.png)
+![Screen Shot 2023-01-16 at 12 30 25 AM](https://user-images.githubusercontent.com/115671262/213898776-194fc9b8-e4f2-4436-b5d1-ddd8217079f2.png)
+
+
 ### Video Demo:
+
+
+https://user-images.githubusercontent.com/115671262/213898787-20375dd8-cd2a-47a8-b790-45580ee55657.mov
+
 
 ### Usage:
 To install Express.js module
@@ -44,7 +52,10 @@ To run local host
 
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/TR/CSS/#css)
 
-### Link:
+[![Heroku](https://img.shields.io/badge/-Heroku-430098?logo=heroku&logoColor=white&style=for-the-badge)](https://heroku.com/)
+
+### Heroku link:
+* [Note Taker](https://mom-notes-to-go.herokuapp.com/notes)
 
 ### Questions?:
 If you have any questions contact me on [GitHub](https://github.com/undefined) or contact 
