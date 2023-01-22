@@ -19,6 +19,10 @@ For this week's challenge I created
 
 ### Screenshot:
 
+![Screen Shot 2023-01-16 at 12 31 18 AM](https://user-images.githubusercontent.com/115671262/213898772-b9ba6c1f-ebae-4cd6-805b-f8fba2c7ae76.png)
+![Screen Shot 2023-01-16 at 12 30 25 AM](https://user-images.githubusercontent.com/115671262/213898776-194fc9b8-e4f2-4436-b5d1-ddd8217079f2.png)
+
+
 ### Video Demo:
 
 ### Usage:
