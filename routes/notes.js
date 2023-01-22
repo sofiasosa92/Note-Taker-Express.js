@@ -28,7 +28,6 @@ notes.post('/', (req, res) => {
 })
 
 //To delete the notes function 
-//  check this later  ??? 
 notes.delete('/:id', (req, res) => {
     const id = req.params.id;
     fs.readFile('./db/db.json', 'utf8', (err, data) => {

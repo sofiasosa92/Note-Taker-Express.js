@@ -22,9 +22,12 @@ For this week's challenge I created
 ### Video Demo:
 
 ### Usage:
+To install Express.js module
+```npm install express ```
 
+To run local host 
+``` node server.js ```
 
-``` ```
 
 
 ### Technology used:
